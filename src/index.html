@@ -90,6 +90,21 @@
                 </ol>
             </section>
         </article>
+        <!-- Form wraps all form controls that will be submitted with the form. -->
+        <!-- action determines what page the form will be submitted to. -->
+        <!-- method determines whether the request will be made as a GET request or POST request. -->
+            <!-- GET requests append the arguments to the URL behind a question mark. They're useful for when you want to send the results of a form to other users, and have the page render the same (for example, searches). -->
+            <!-- POST requests do not show any of the form submission data in the URL. They're useful for user-specific tasks such as logins, as well as database tasks that you don't want to accidentally repeat. -->
+        <form action="index.html" method="get">
+            <!-- Label serves as a text element associated with a form control, referred to by the for attribute. -->
+            <label for="fname">First Name</label>
+            <!-- Input is the basic form control, it can be rendered in mulitple ways based on the type attribute. The name attribute determines what the control's data will be called in the form submission, and the id (along with the other functions of id) draws the association to the label. -->
+            <input id="fname" name="fname" type="text" />
+            <label for="lname">Last Name</label>
+            <input id="lname" name="lname" type="text" />
+            <!-- Input with a type of submit will submit the form when clicked. The value attribute determines the button's label. -->
+            <input type="submit" value="anything">
+        </form>
     </main>
     <!-- Similar to the header but at the end. Typically contains social media links, contact forms, sitemaps, etc. -->
     <footer>
